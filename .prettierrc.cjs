@@ -8,4 +8,13 @@ module.exports = {
   importOrderParserPlugins: ['typescript', 'jsx', 'decorators-legacy'],
   importOrderTypeScriptVersion: '5.5.4',
   plugins: ['prettier-plugin-packagejson', '@ianvs/prettier-plugin-sort-imports'],
+  overrides: [
+    {
+      files: ['slides.md', 'pages/*.md'],
+      options: {
+        parser: 'slidev',
+        plugins: ['prettier-plugin-slidev'],
+      },
+    },
+  ],
 };

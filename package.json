@@ -1,8 +1,31 @@
 {
   "name": "presentation-large-scale-code-refactorings-using-codemods-and-asts",
   "private": true,
+  "type": "module",
   "imports": {
     "#pkg/*": "./src/*"
+  },
+  "scripts": {
+    "build": "slidev build",
+    "dev": "slidev --open",
+    "export": "slidev export",
+    "format": "prettier --write --ignore-unknown .",
+    "nuke": "del-cli --dot=true node_modules"
+  },
+  "dependencies": {
+    "@slidev/cli": "^0.50.0-beta.5",
+    "@slidev/theme-default": "latest",
+    "@slidev/theme-seriph": "latest",
+    "@types/markdown-it": "^14.1.2",
+    "postcss": "^8.4.47",
+    "vue": "^3.5.12"
+  },
+  "devDependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "^4.3.1",
+    "del-cli": "^6.0.0",
+    "prettier": "^3.3.3",
+    "prettier-plugin-packagejson": "^2.5.3",
+    "prettier-plugin-slidev": "^1.0.5"
   },
   "packageManager": "pnpm@9.12.3",
   "engines": {

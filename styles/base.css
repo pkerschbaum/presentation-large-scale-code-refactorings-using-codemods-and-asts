@@ -1,0 +1,4 @@
+.slidev-code-wrapper {
+  max-height: 100%;
+  overflow: auto;
+}
